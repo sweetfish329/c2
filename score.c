@@ -4,7 +4,7 @@
 void scorein(int *s);
 
 int main(void){
-    int ten[N], rank[N], data, bunpu[6], x;
+    int ten[N], rank[N], bunpu[6], x;
     int i,j;
     for(i=0;i<6;i++){
         bunpu[i]=0;
@@ -12,8 +12,7 @@ int main(void){
     // input score
     for(i=0;i<N;i++){
         printf("No.%dの点数(0-100)：",i+1);
-        scorein(&data);
-        ten[i]=data;
+        scorein(&ten[i]);
     }
     // init rank
     for(i=0;i<N;i++)
