@@ -12,6 +12,7 @@ int main(void){
     // input score
     for(i=0;i<N;i++){
         printf("No.%dの点数(0-100)：",i+1);
+        //if you don't use original func, change to scanf()
         scorein(&ten[i]);
     }
     // init rank
